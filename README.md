@@ -100,8 +100,8 @@ clients = tweepy.Client(
 )
 
 **Error Handling**
-
 Includes robust error handling for various API responses, such as unauthorized access, rate limits, and tweet not found errors.
+
 **Error handling in posting the tweet**
 ![image](https://github.com/user-attachments/assets/a642690c-ca18-45ab-bf7a-7af6998f1deb)
 
