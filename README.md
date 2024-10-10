@@ -53,13 +53,13 @@ Go to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/das
  This Python program allows users to post tweets to Twitter interactively using the Tweepy library. It authenticates with the Twitter API using API keys and tokens and prompts the user to enter tweets. The program checks for empty inputs and allows users to post multiple tweets until they type "exit" to quit. It posts the tweet using the client.create_tweet() method and displays the Tweet ID for confirmation. Error handling ensures that issues are gracefully managed without crashing the program.
 
 **Viewing the Tweet**
+
 ![image](https://github.com/user-attachments/assets/cf51d256-10dd-4eae-98ec-5b4ad2f39889)
 
 
 **Deleting the Tweet**
 
-
-![image](https://github.com/user-attachments/assets/cdfabf74-1adf-4a25-a773-e9d9e45703a5) 
+![image](https://github.com/user-attachments/assets/cdfabf74-1adf-4a25-a773-e9d9e45703a5)
  -
  **Checking if the Tweet is deleted**
 ![image](https://github.com/user-attachments/assets/e961bfe2-8787-44b3-9b91-b98521ddf63d)
