@@ -7,10 +7,10 @@ access_token = '1844361782988566529-ohjorxrUwjKMnhVo7VFKAk2qt68HUr'  # Access To
 access_token_secret = 'IUvdztod9YITr8U870PUIn7gbp5RlIrGzB3iKWjTOrihE'  # Access Token Secret
 
 # Authenticate to Twitter using OAuth1
-auth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
+authentication = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
 
-# Create the Tweepy API object
-api = tweepy.API(auth)
+# Create the  API object
+api = tweepy.API(authentication)
 
 # Function to delete a tweet
 def deletingMytweets():

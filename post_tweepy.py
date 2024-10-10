@@ -8,7 +8,7 @@ access_token_secret = 'IUvdztod9YITr8U870PUIn7gbp5RlIrGzB3iKWjTOrihE'  # Access 
 bearer_token = "AAAAAAAAAAAAAAAAAAAAAJJWwQEAAAAASt4q3RBhorzip%2FP1MW3r7CCG2O0%3DfWrACcegytQqG6b0FoAAYO9sDhlUejzRrqZIdUrGMKsFNy5khV"  # Bearer Token
 
 # Create a Tweepy client
-client = tweepy.Client(
+clients = tweepy.Client(
     consumer_key=consumer_key, consumer_secret=consumer_secret,
     access_token=access_token, access_token_secret=access_token_secret
 )
@@ -31,7 +31,7 @@ def postingMytweet():
                 continue
 
             # Posts the exact tweet we are trying to display
-            response = client.create_tweet(text=Mytweet)
+            response = clients.create_tweet(text=Mytweet)
             print("  Posted successfully!")
 
             # To display the tweet ID
