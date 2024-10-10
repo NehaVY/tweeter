@@ -86,11 +86,13 @@ We  have to give the credentials for authentication.
 This allows the program to perform actions like posting and deleting tweets on behalf of the authenticated user.
 
 **Authentication  for Posting the tweet**.
-
+The code authenticates for posting a tweet by using OAuth 1.0a credentials to authorize API requests on behalf of your Twitter account.
 authentication = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
 api = tweepy.API(authentication)
 
 **Authentication  for Deleting the tweet**.
+
+This setup uses OAuth 1.0a credentials to authenticate your access to Twitter's API via the tweepy.Client. With this, you can make authorized requests, including deleting tweets, ensuring secure interaction with your Twitter account.
 
 clients = tweepy.Client(
     consumer_key=consumer_key, consumer_secret=consumer_secret,
@@ -99,5 +101,13 @@ clients = tweepy.Client(
 
 **Error Handling**
 
-The program is designed to handle errors in a systematic approach, ensuring it doesn’t crash while providing helpful feedback. For instance, if a tweet can’t be found, it uses the tweepy.NotFound exception to let users know. When users exceed their API limits, the tweepy.TooManyRequests exception kicks in to inform them about the rate limit issue. Permission problems are managed with the tweepy.Forbidden exception, explaining why certain tweets can't be deleted. General Tweepy-related errors and unexpected issues are caught by tweepy.TweepyException and a general Exception block, respectively.
+Includes robust error handling for various API responses, such as unauthorized access, rate limits, and tweet not found errors.
+**Error handling in posting the tweet**
+![image](https://github.com/user-attachments/assets/a642690c-ca18-45ab-bf7a-7af6998f1deb)
+
+**Error handling in delete the tweet**
+![image](https://github.com/user-attachments/assets/371b66a7-0b00-4bf6-a05d-991d53f8cf52)
+
+
+
 
