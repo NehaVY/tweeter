@@ -56,15 +56,12 @@ Go to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/das
 
 ![image](https://github.com/user-attachments/assets/cf51d256-10dd-4eae-98ec-5b4ad2f39889)
 
-
 **Deleting the Tweet**
 
 ![image](https://github.com/user-attachments/assets/cdfabf74-1adf-4a25-a773-e9d9e45703a5)
  -
  **Checking if the Tweet is deleted**
 ![image](https://github.com/user-attachments/assets/e961bfe2-8787-44b3-9b91-b98521ddf63d)
->>>>>>> 2d2901b05ee40eeab41873e952d097bb3cda4538
-
 
 **Deleting the Tweet** 
 
